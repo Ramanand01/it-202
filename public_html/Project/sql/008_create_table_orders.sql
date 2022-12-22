@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `orders` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `user_id` BIGINT NULL DEFAULT NULL,
+  `created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `total_price` INT,
+  `address` VARCHAR(599) DEFAULT NULL,
+  `payment_method` INT
+)
