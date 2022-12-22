@@ -1,5 +1,5 @@
 <?php
-require(__DIR__ . "/../../../partials/nav.php");
+require(__DIR__ . "/../../partials/nav.php");
 
 if (!has_role("Admin")) {
     flash("You don't have permission to view this page", "warning");
@@ -31,5 +31,5 @@ $ignore = ["id", "modified", "created"];
     </form>
 </div>
 <?php
-require_once(__DIR__ . "/../../../partials/footer.php");
+require_once(__DIR__ . "/../../partials/footer.php");
 ?>
